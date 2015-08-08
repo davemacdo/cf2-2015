@@ -1,0 +1,49 @@
+// smaller screen styles
+
+@media (max-width: 1599px) {
+	#masthead.site-header .home-link {
+		min-height: 100px;
+		max-height:170px;
+	}
+	.site-title {
+		white-space: nowrap;
+		margin: auto auto auto 190px;
+		font-size: 60px !important;
+		padding: 15px 0 15px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.site-title {
+		margin: auto auto auto 130px;
+		font-size: 45px !important;
+		padding: 15px 0 15px;
+	}
+
+}
+
+@media (max-width: 560px) {
+	.site-title {
+		margin: auto auto auto 115px;
+		font-size: 35px !important;
+		//padding: 15px 0 15px;
+	}
+
+}
+
+@media (max-width: 560px) {
+	.site-title {
+		margin: auto auto auto 135px;
+		font-size: 35px !important;
+		//padding: 15px 0 15px;
+		span:first-child{
+			font-size:30px;
+		}
+		span:last-child{
+			white-space: normal;
+		}
+	}
+
+}
+

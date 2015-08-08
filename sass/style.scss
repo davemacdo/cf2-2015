@@ -44,25 +44,28 @@ a.home-link {
 	background-position: 20px center;
 }
 
+/*
 .site-title {
 	margin: auto auto auto 190px;
-	font-size: 35px;
+	font-size: 60px;
 	padding: 15px 0 15px;
 	//height:230px;
 	//top: 50%;
 	//transform: translateY(50%);
 }
+*/
 
 .site-header .site-title:hover {
 	text-decoration:none;
 }
 
-h1.site-title span:first-child{
-	color:$primary;
-}
-
-h1.site-title span:last-child{
-	color:$secondary;
+h1.site-title {
+	span:first-child {
+		color:$secondary;
+	}
+	span:last-child {
+		color:$primary;
+	}
 }
 
 h1.entry-title {
@@ -153,3 +156,5 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 		}
 	}
 }
+
+@import "smaller";
