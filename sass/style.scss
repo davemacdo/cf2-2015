@@ -1,0 +1,155 @@
+/*
+
+Theme Name: CF2 2015
+Description: Central Florida Composers Forum
+Author: David MacDonald
+Template: twentythirteenf
+
+*/
+
+@import "vars";
+@import url("../twentythirteen/style.css");
+
+body {
+	font-family: $body-font-stack;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $h-font-stack;
+}
+/*
+#masthead {
+	background-color: $bg-color;
+	background-image:none;
+	background-image: url(images/cf2-sq-01.svg);
+	background-size: auto 85%;
+	background-position: 0px 0px;
+}
+*/
+
+#masthead.site-header {
+	background-image:none;
+}
+
+#masthead.site-header .home-link {
+	min-height: 100px;
+	max-height:170px;
+}
+
+a.home-link {
+	background-color: $bg-color;
+	background-image: url(images/cf2-sq-01.svg);
+	background-repeat: no-repeat;
+	background-size: auto 80%;
+	background-position: 20px center;
+}
+
+.site-title {
+	margin: auto auto auto 190px;
+	font-size: 35px;
+	padding: 15px 0 15px;
+	//height:230px;
+	//top: 50%;
+	//transform: translateY(50%);
+}
+
+.site-header .site-title:hover {
+	text-decoration:none;
+}
+
+h1.site-title span:first-child{
+	color:$primary;
+}
+
+h1.site-title span:last-child{
+	color:$secondary;
+}
+
+h1.entry-title {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.entry-meta a, .entry-meta a:visited, {
+	color:$mid-gray;
+}
+
+.entry-content a:visited, .entry-content a:visited, .widget a:visited {
+	color:$secondary-dark;
+}
+
+.entry-content a:hover, .entry-meta a:hover, .widget a:hover {
+	color:$secondary-light;
+}
+
+.entry-content a, .widget a {
+	color: $secondary;
+}
+
+.entry-title a:hover {
+	color:$primary;
+}
+
+//kill the clock!
+.entry-meta .date a:before {content:none;}
+
+.author.vcard {display:none;}
+
+div.sidebar-inner div.widget-area {
+	background-color: $light-gray;
+
+	aside {
+		background-color: transparent;
+	}
+}
+
+form input {
+	border:none;
+}
+
+div.navbar {
+	background-color: $bg-color;
+}
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus, .nav-menu .sub-menu, .nav-menu .children {
+	background-color: $primary;
+}
+
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-menu ul ul a:focus, .nav-menu li a:hover {
+	background-color: $primary-light;
+}
+
+.navigation {
+
+	.meta-nav {
+		background-color: $primary;
+	}
+
+	a {
+		color: $primary;
+	}
+
+	a:hover {
+		color: $primary-light;
+		.meta-nav {
+			background-color: $primary-light;
+		}
+	}
+
+}
+
+.paging-navigation {
+	background-color: $light-gray;
+}
+
+#colophon {
+	background-color: $light-gray;
+	a {
+		color: $primary;
+		back
+
+		:hover {
+			color: $primary-light;
+		}
+	}
+}

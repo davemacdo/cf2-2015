@@ -1,0 +1,34 @@
+// Sassy variables
+
+
+////////////////////////
+// Colors
+
+$bg-color: #FFFFFF;
+$light-gray: #E7E7E7;
+$mid-gray: #444444;
+
+// Pink and green
+$primary: rgb(207,61,150);
+$secondary: rgb(150,201,61);
+
+// Blue and orange
+//$primary-color: rgb(8,87,133);
+//$secondary-color: rgb(247,146,55);
+
+// Blue and light blue
+//$primary-color: rgb(15,92,131);
+//$secondary-color: rgb(73,161,218);
+
+$primary-dark: darken($primary, 20%);
+$primary-light: lighten($primary, 7%);
+
+$secondary-dark: darken($secondary, 20%);
+$secondary-light: lighten($secondary, 10%);
+
+
+////////////////////////
+// Fonts
+
+$body-font-stack: "Helvetica Neue","Helvetica","Arial","Open Sans",sans-serif;
+$h-font-stack: "Helvetica Neue","Helvetica","Arial","Open Sans",sans-serif;
