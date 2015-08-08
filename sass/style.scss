@@ -27,6 +27,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 */
 
+a {
+	color: $secondary;
+}
+
+a:hover {
+	color: $secondary-light;
+}
+
+a:visited {
+	color: $secondary-dark;
+}
+
+button, input, textarea {
+	border: 2px solid darken($paper,10%);
+}
+
 #masthead.site-header {
 	background-image:none;
 }
@@ -99,7 +115,7 @@ h1.entry-title {
 .author.vcard {display:none;}
 
 div.sidebar-inner div.widget-area {
-	background-color: $light-gray;
+	background-color: $paper;
 
 	aside {
 		background-color: transparent;
@@ -122,6 +138,14 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 	background-color: $primary-light;
 }
 
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+	color: $primary-light;
+}
+
+ul.children .current_page_item > a {
+	color: #FFFFFF;
+}
+
 .navigation {
 
 	.meta-nav {
@@ -142,14 +166,14 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 }
 
 .paging-navigation {
-	background-color: $light-gray;
+	background-color: $paper;
 }
 
 #colophon {
-	background-color: $light-gray;
+	background-color: $paper;
 	a {
 		color: $primary;
-		back
+		
 
 		:hover {
 			color: $primary-light;
@@ -157,4 +181,7 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 	}
 }
 
+@import "comments";
 @import "smaller";
+
+

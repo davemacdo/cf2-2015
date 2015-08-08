@@ -1,0 +1,17 @@
+// comment area styles
+
+.comment-respond {
+	background-color: #FFFFFF;
+}
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+	background: linear-gradient(to bottom, $primary-light 0%, $primary 100%);
+	color: #FFFFFF;
+	border-bottom: none;
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
+	background: linear-gradient(to bottom, lighten($primary-light,10%) 0%, lighten($primary,10%) 100%);
+	color: #FFFFFF;
+	border-bottom: none;
+}
