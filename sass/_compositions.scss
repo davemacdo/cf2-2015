@@ -53,3 +53,15 @@ p.score-link {
 		text-decoration: none;
 	}
 }
+
+.comp-list {
+	list-style: none;
+	padding: 0px;
+
+	li {
+		padding: 10px;
+	}
+	li:nth-of-type(odd){
+		background-color:$paper;
+	}
+}

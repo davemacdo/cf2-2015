@@ -217,3 +217,11 @@ p.score-link {
   p.score-link a:hover {
     background-color: #d65aa5;
     text-decoration: none; }
+
+.comp-list {
+  list-style: none;
+  padding: 0px; }
+  .comp-list li {
+    padding: 10px; }
+  .comp-list li:nth-of-type(odd) {
+    background-color: #FFF7EF; }

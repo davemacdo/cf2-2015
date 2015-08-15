@@ -74,4 +74,38 @@ function twentythirteen_entry_date( $echo = true ) {
 // END entry date
 
 
+// "PLUGIN" type thingy for composition type child pages
+function list_compositions_by_type ( $atts, $content=null ) {
+	shortcode_atts( array('type'=>'Chamber Works', 'show_inst'=>true), $atts);
+	//return $atts['type'] . $atts['show_inst'];
+
+	$this_page_id = get_the_ID();
+
+	$args = array(
+		'post_type'		=> 'page',
+		'post_per-page'	=> -1,
+		'post_parent'	=> $post->$this_page_id,
+		'order'			=> 'ASC',
+		'meta_key'		=> 'composer',
+		'orderby'		=> 'meta_value'
+	);
+
+	$parent = new WP_Query( $args );
+	//$output = 0;
+	//return $parent->post_count;
+	$list_items = '';
+	if ( $parent->have_posts() ) :
+
+		while ( $parent->have_posts() ) : $parent->the_post();
+			$list_items .= '<li><a href="' . get_permalink() . '">' . the_composition('title',false) . '</a> for ' . the_composition('instrumentation',false) . ' by ' . the_composition('composer',false) . '</li>';
+		endwhile;
+
+		return '<ul class="comp-list">' . $list_items . '</ul>';
+	endif;
+	wp_reset_query();
+
+}
+
+add_shortcode('comp-list','list_compositions_by_type');
+
 ?>
