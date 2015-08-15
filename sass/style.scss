@@ -142,7 +142,7 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 	color: $primary-light;
 }
 
-ul.children .current_page_item > a {
+ul.children .current_page_item > a, ul.sub-menu .current_page_item >a {
 	color: #FFFFFF;
 }
 
@@ -173,7 +173,7 @@ ul.children .current_page_item > a {
 	background-color: $paper;
 	a {
 		color: $primary;
-		
+
 
 		:hover {
 			color: $primary-light;
@@ -184,4 +184,3 @@ ul.children .current_page_item > a {
 @import "comments";
 @import "smaller";
 @import "compositions";
-

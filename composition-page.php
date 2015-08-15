@@ -8,7 +8,7 @@ add_filter('wp_title', 'composition_page_title');
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content composition-content" role="main">
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -22,6 +22,7 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<h1 class="entry-title"><span class="composer"><?php the_composition("composer"); ?>:</span> <br><span class="composition-title"><?php the_composition("title"); ?></span></h1>
+						<?php cf_instr(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">

@@ -12,6 +12,14 @@ function the_composition( $param, $echo = true ) {
 
 
 // grab media stuff
+function cf_instr( $echo = true ){
+	$custom_fields = get_post_custom();
+
+	foreach($custom_fields['instrumentation'] as $instr) {
+		echo '<h2 class="cf-instrumentation">for '.$instr.'</h2>';
+	}
+}
+
 function cf_media( $echo = true ){
 	$custom_fields = get_post_custom();
 

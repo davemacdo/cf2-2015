@@ -111,7 +111,7 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
   color: #d65aa5; }
 
-ul.children .current_page_item > a {
+ul.children .current_page_item > a, ul.sub-menu .current_page_item > a {
   color: #FFFFFF; }
 
 .navigation .meta-nav {
@@ -173,6 +173,20 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hov
       font-size: 30px; }
     .site-title span:last-child {
       white-space: normal; } }
+.composition-content .composition-title {
+  font-style: italic; }
+.composition-content h1 {
+  font-size: 30px; }
+.composition-content h2.cf-instrumentation {
+  font-size: 24px;
+  font-weight: normal;
+  color: #444444;
+  margin-top: 0px; }
+.composition-content p.more-info-link {
+  padding: 10px;
+  background-color: #FFF7EF;
+  border-left: 3px solid #96c93d; }
+
 .composition-title {
   font-style: italic; }
 
@@ -181,8 +195,7 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hov
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
-  height: 0;
-  margin: 30px 0px !important; }
+  height: 0; }
 
 .cf2-media-wrapper iframe {
   position: absolute;
