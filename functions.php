@@ -13,22 +13,20 @@ function the_composition( $param, $echo = true ) {
 
 // grab media stuff
 function cf_instr( $echo = true ){
-	$instr = get_post_meta($post->ID, 'instrumentation', TRUE);
-
-	if ( $instr != '' ) {
-		foreach($instr as $instr) {
-			echo '<h2 class="cf-instrumentation">for '.$instr.'</h2>';
-		}
+	$instr = the_composition('instrumentation', false);
+	if ( $instr != null ) {
+		echo '<h2 class="cf-instrumentation">for '. $instr .'</h2>';
 	}
 }
 
 function cf_media( $echo = true ){
-	$media = get_post_meta($post->ID, 'media_embed', TRUE);
+	$media = the_composition('media_embed', false);
 
-	if ( $media != '' ) {
-		foreach($media as $iframe) {
-			echo '<div class="cf-media-wrapper">'.$iframe.'</div>';
-		}
+	if ( $media != null ) {
+		echo '<div class="cf-media-wrapper">'.$media.'</div>';
+		// foreach($media as $iframe) {
+		// 	echo '<div class="cf-media-wrapper">'.$iframe.'</div>';
+		// }
 	}
 }
 
