@@ -84,7 +84,7 @@ function list_compositions_by_type ( $atts, $content=null ) {
 	$args = array(
 		'post_type'		=> 'page',
 		'post_per-page'	=> -1,
-		'post_parent'	=> $post->$this_page_id,
+		'post_parent'	=> $this_page_id,
 		'order'			=> 'ASC',
 		'meta_key'		=> 'composer',
 		'orderby'		=> 'meta_value'
@@ -97,7 +97,11 @@ function list_compositions_by_type ( $atts, $content=null ) {
 	if ( $parent->have_posts() ) :
 
 		while ( $parent->have_posts() ) : $parent->the_post();
-			$list_items .= '<li><a href="' . get_permalink() . '">' . the_composition('title',false) . '</a> for ' . the_composition('instrumentation',false) . ' by ' . the_composition('composer',false) . '</li>';
+			$list_items .= '<li><a href="' . get_permalink() . '">' . the_composition('title',false) . '</a>';
+			if ( the_composition('instrumentation',false) != null) :
+				$list_items .= ' for ' . the_composition('instrumentation',false);
+			endif;
+			$list_items .= ' by ' . the_composition('composer',false) . '</li>';
 		endwhile;
 
 		return '<ul class="comp-list">' . $list_items . '</ul>';
