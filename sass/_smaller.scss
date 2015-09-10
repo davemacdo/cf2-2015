@@ -1,6 +1,6 @@
 // smaller screen styles
 
-@media (max-width: 1599px) {
+@media (min-width: 768px) {
 	#masthead.site-header .home-link {
 		min-height: 100px;
 		max-height:170px;
@@ -46,4 +46,3 @@
 	}
 
 }
-

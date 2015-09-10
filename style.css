@@ -146,7 +146,7 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hov
   color: #FFFFFF;
   border-bottom: none; }
 
-@media (max-width: 1599px) {
+@media (min-width: 768px) {
   #masthead.site-header .home-link {
     min-height: 100px;
     max-height: 170px; }
