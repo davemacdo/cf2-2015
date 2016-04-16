@@ -82,6 +82,9 @@ h1.entry-title {
 .entry-content a, .widget a {
   color: #96c93d; }
 
+.entry-title a {
+  color: #141412; }
+
 .entry-title a:hover {
   color: #cf3d96; }
 
