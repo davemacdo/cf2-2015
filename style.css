@@ -228,3 +228,20 @@ p.score-link {
     padding: 10px; }
   .comp-list li:nth-of-type(odd) {
     background-color: #FFF7EF; }
+
+div.composer-bio:nth-of-type(odd) img.headshot {
+  float: left;
+  margin: 5px 20px 5px -60px; }
+
+div.composer-bio:nth-of-type(even) img.headshot {
+  float: right;
+  margin: 5px -60px 5px 20px; }
+
+@media (max-width: 1069px) {
+  div.composer-bio:nth-of-type(odd) img.headshot {
+    float: left;
+    margin: 5px 20px 5px 0px; }
+
+  div.composer-bio:nth-of-type(even) img.headshot {
+    float: right;
+    margin: 5px 0px 5px 20px; } }
